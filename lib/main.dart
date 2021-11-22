@@ -1,4 +1,4 @@
-import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_progmob_2021/pertemuan1.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -57,8 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
     int isLogin = pref.getInt("is_login");
     if(isLogin == 1){
       Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => Pertemuan1(title: "Halo Push",)),
+          context, MaterialPageRoute(builder: (BuildContext context) => Pertemuan1(title: "Halo Push"))
       );
     }
   }
