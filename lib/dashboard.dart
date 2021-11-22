@@ -61,6 +61,22 @@ class _DashboardState extends State<Dashboard> {
                   );
                   },
                 ),
+              ListTile(
+                title: Text("Data Matakuliah"),
+                trailing: Icon(Icons.library_books),
+                subtitle: Text("Menu CRUD Data Matakuliah"),
+                onTap: (){
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Text("Data Jadwal"),
+                trailing: Icon(Icons.schedule),
+                subtitle: Text("Menu CRUD Data Jadwal"),
+                onTap: (){
+                  Navigator.pop(context);
+                },
+              ),
               Divider(
                 color: Colors.black,
                 height: 20,
